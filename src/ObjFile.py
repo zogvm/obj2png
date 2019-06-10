@@ -89,7 +89,7 @@ class ObjFile:
         for line in lines:
             if 'v' == line[0]:
                 v=line.split()
-                nodes.append(ObjFile.ToFloats(v[1:]))
+                nodes.append(ObjFile.ToFloats(v[1:4]))
             if 'f' == line[0]:
                 # remove /int 
                 line=re.sub(RE,'',line)                
